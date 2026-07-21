@@ -1,0 +1,11 @@
+// for backend:-
+// 1.config /db.js = connected to database
+// 2.models/user.js= database design (schema design)
+// 3.controller/userController=data save hobe
+// 4.routes/userRoutes=api routing 
+// 5.index.js = for server start
+// httpOnly: true → JavaScript যেন cookie পড়তে না পারে।
+// secure → Production-এ শুধু HTTPS-এ cookie পাঠানো হবে।
+// sameSite: "strict" → CSRF attack কমাতে সাহায্য করে।
+// maxAge → Cookie কতদিন থাকবে।
+// CSRF=cross site request forhay

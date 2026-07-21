@@ -1,0 +1,19 @@
+{
+  "name": "login_signup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"concurrently \"npm:server\" \"npm:client\"",
+     "server":"npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend"
+   
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
