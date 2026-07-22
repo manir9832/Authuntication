@@ -7,9 +7,7 @@ require('./config/db')
 const userRoutes=require("./routes/userRoutes");
 const PORT=process.env.PORT||2000;
 
-app.get('/',(req,res)=>{
-   res.send('server running');
-})
+
 app.use(
   cors({
     origin: [
@@ -22,6 +20,10 @@ app.use(
 );
 app.use(express.json());
 app.use(cookieParser())
+
+app.get('/',(req,res)=>{
+   res.send('server running');
+})
 
 app.use("/api/auth",userRoutes);
 
