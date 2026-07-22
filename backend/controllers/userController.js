@@ -38,7 +38,7 @@ const signup = async (req, res) => {
     //     maxAge:7*24*60*60*1000
     //   })
     generateTokenAndSetCookie(res, user._id);
-    await sendVerificationEmail(user.email, verificationToken);
+     sendVerificationEmail(user.email, verificationToken);
     res.status(201).json({
       msg: "signup succesfully",
       user: {
